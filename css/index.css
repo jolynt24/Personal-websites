@@ -6,9 +6,8 @@ body{
     text-align: center;
 }
 #profile{
-    width: 250px;
-    height: 225px;
-    border-radius: 50%;
+    width: 17%;
+    border-radius: 70%;
 }
 #name{
     color: whitesmoke;
@@ -34,5 +33,29 @@ body{
 }
 .social{
     display: block;         
+    text-align: center;
+}
+button{
+    background-color: grey;
+    color: black;
+    border: none;
+    border-radius: 5%;
+    padding: 0.5% 1%;
+    font-size: medium;
+    float: center;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+button:hover{
+    color: whitesmoke;
+    box-shadow: 2px 5px 25px whitesmoke;
+}
+p{
+    color: white;
+}
+a{
+    color: wheat;
+}
+#education{
+    display: block;
     text-align: center;
 }
