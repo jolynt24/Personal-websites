@@ -24,7 +24,8 @@
           <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
           <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
           <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+          <li class="nav__item"><a href="resources.html" class="nav__link">Resources</a></li>
+          <li class="nav__item"><a href="#footer" class="nav__link">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -74,22 +75,31 @@
     <!--My projects-->
     <section class="my-work" id="work">
       <h2 class="section__title section__title--work">My projects</h2>
-      <p class="section__subtitle section__subtitle--work">Click on the images to open source code<p>
+      <p class="section__subtitle section__subtitle--work">Hover over the image to know more<p>
       <div class="portfolio">
+        
         <!--Portfolio item 1-->
-        <a href="https://github.com/jolynt24/Knapsack_ATM" class="portfolio__item">
+        <figure class="portfolio-item">
           <img src="img/atm.webp" alt="an animated atm" class="portfolio__img">
-          <!--<div class="overlay">
-            <h3>Cash Withdrawal Optimization</h3>
-            <p>Using knapsack algorithm to tackle the problem of insufficient funds or denominations during cash withdrawal.</p>
-            <p>More info: <a href="https://ssrn.com/abstract=3578519">Algorithmic Approach for Cash Withdrawal Problem in ATM</a></p>
-          </div>-->
-        </a>
+          <figcaption>
+            <h3 class="portfolio-title">Cash Withdrawal Optimization</h3>
+            <p class="portfolio-desc">Using knapsack algorithm to tackle the problem of insufficient funds or denominations during cash withdrawal. <a href="https://ssrn.com/abstract=3578519">More Info</a></p>
+            <a href="https://github.com/jolynt24/Knapsack_ATM" class="portfolio-link">View source code ></a>
+          </figcaption>
+        </figure> 
 
         <!--Portfolio item 2-->
-        <a href="https://github.com/jolynt24/jolynt24.github.io" class="portfolio__item">
+        <figure class="portfolio-item">
           <img src="img/portfolio_website.png" alt="website screenshot" class="portfolio__img">
-        </a>    
+          <figcaption>
+            <h3 class="portfolio-title">Portfolio Website</h3>
+            <p class="portfolio-desc">A simple HTML/CSS website showcasing skills and projects.</p>
+            <a href="https://jolynt24.github.io" class="portfolio-link">Visit site ></a>
+            <a href="https://github.com/jolynt24/jolynt24.github.io" class="portfolio-link">View Source code ></a>
+          </figcaption>
+        </figure>    
+      
+      </div>
     </section>
 
     <!--footer-->
