@@ -413,6 +413,7 @@ header {
 .portfolio-item .portfolio__img {
     display: block;
     width: 100%; 
+    overflow: hidden;
 }
 
 .portfolio-item figcaption {
