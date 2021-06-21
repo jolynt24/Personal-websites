@@ -407,6 +407,7 @@ header {
 .portfolio-item {
     position: relative;
     overflow: hidden;
+    flex: 1 1 20rem;
 }
 
 .portfolio-item .portfolio__img {
