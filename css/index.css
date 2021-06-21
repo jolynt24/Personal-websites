@@ -402,6 +402,32 @@ header {
     left:0;
 }
 
+.portfolio-item figcaption {
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 1em;
+    background: var(--clr-alt);
+    color: var(--clr-light);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transition: top ease-in-out 250ms; 
+}
+
+.portfolio-title {
+    color: var(--clr-light);
+    font-size: var(--fs-h3);
+    margin-bottom: auto; 
+    font-family: var(--ff-primary);
+}
+
+.portfolio-item:hover figcaption, .portfolio-item:focus figcaption {top: 0;}
+
+
+
 .portfolio-desc {
     color: var(--clr-light);
     font-family: var(--ff-secondary);
@@ -440,30 +466,6 @@ header {
         overflow: hidden;
         flex: 1 1 20rem;
     }
-
-    .portfolio-item figcaption {
-        position: absolute;
-        top: 100%;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        padding: 1em;
-        background: var(--clr-alt);
-        color: var(--clr-light);
-        text-align: left;
-        display: flex;
-        flex-direction: column;
-        transition: top ease-in-out 250ms; 
-    }
-    
-    .portfolio-title {
-        color: var(--clr-light);
-        font-size: var(--fs-h3);
-        margin-bottom: auto; 
-        font-family: var(--ff-primary);
-    }
-    
-    .portfolio-item:hover figcaption, .portfolio-item:focus figcaption {top: 0;}
 
 }
 
