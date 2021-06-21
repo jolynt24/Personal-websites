@@ -243,7 +243,7 @@ header {
     display: inline-block;
 }
 
-@media(min-width: 600px) {
+@media(min-width: 800px) {
     /*.intro {
         display: grid;
         width: min-content;
@@ -357,7 +357,7 @@ header {
     font-family: var(--ff-secondary);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     .about-me {
         display: grid;
         grid-template-columns: 1fr 200px;
@@ -406,8 +406,6 @@ header {
 
 .portfolio-item {
     position: relative;
-    overflow: hidden;
-    flex: 1 1 20rem; 
 }
 
 .portfolio-item .portfolio__img {
@@ -462,6 +460,10 @@ header {
     height: .8em;
     width: .8em;
     margin-left: .5em; 
+}
+
+@media (min-width: 800px) {
+    
 }
 
 /*footer*/
