@@ -443,7 +443,7 @@ header {
 
     .portfolio-item figcaption {
         position: absolute;
-        /*top: 100%;*/
+        top: 100%;
         bottom: 0;
         right: 0;
         left: 0;
