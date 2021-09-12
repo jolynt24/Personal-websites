@@ -266,8 +266,8 @@ header {
       }
 
     .intro__img {
-        max-width: 220px;
-        max-height: 300px;
+        width: 220px;
+        height: 300px;
         grid-area: img;
         position: absolute;
         z-index: 2;
