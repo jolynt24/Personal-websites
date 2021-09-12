@@ -242,17 +242,7 @@ header {
     display: inline-block;
 }
 
-@media(min-width: 800px) {
-    /*.intro {
-        display: grid;
-        width: min-content;
-        grid-column-gap: 1em;
-        margin: 0 auto;
-        grid-template-areas: 
-        "img title"
-        "img subtitle";
-        grid-template-columns: min-content max-content;
-    }*/
+@media(min-width: 600px) {
 
     .section__title--intro {
         margin-left: 4em;
@@ -276,8 +266,8 @@ header {
       }
 
     .intro__img {
-        width: 220px;
-        height: 300px;
+        max-width: 220px;
+        max-height: 300px;
         grid-area: img;
         position: absolute;
         z-index: 2;
@@ -292,6 +282,13 @@ header {
         left: -1.5em;
         width: calc(100% + 1.5em);
         color: white;
+    }
+}
+
+@media(min-width: 400px) {
+    .intro__img{
+        max-width: 220px;
+        max-height: 300px;
     }
 }
 
