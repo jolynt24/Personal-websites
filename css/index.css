@@ -137,7 +137,7 @@ header {
 .logo a {
     text-decoration: none;
     color: var(--clr-dark);
-    margin-left: 2em;
+    margin-left: 0.5em;
 }
 
 .logo a:hover {color: var(--clr-alt);}
@@ -161,17 +161,16 @@ header {
     display: flex;
     height: 100%;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    
+    justify-content: stretch;
+    align-items: left;
+    margin: 15% 2em 0 2em;
+    padding: 0;  
 }
 
 .nav__link {
     color: inherit;
     font-weight: var(--fw-bold);
-    font-size: var(--fs-h2);
+    font-size: var(--fs-h3);
     text-decoration: none;
 }
 
@@ -186,12 +185,12 @@ header {
     cursor: pointer;
     position: absolute;
     right: 1em;
-    top: 1em;
+    top: 2em;
     z-index: 1000;
 }
 
 .nav-open .nav {
-    transform: translateX(0);
+    transform: translateX(75%);
 }
 
 .nav-open .hamburger {
@@ -237,7 +236,7 @@ header {
 
 .intro {position: relative}
 
-/*.intro__img {box-shadow: var(--bs);}*/
+.intro__img {box-shadow: var(--bs);}
 
 .section__subtitle--intro{
     display: inline-block;
@@ -256,6 +255,7 @@ header {
     }*/
 
     .section__title--intro {
+        margin-left: 4em;
         overflow: hidden; /* Ensures the content is not revealed until the animation */
         border-right: .05em solid var(--clr-accent);  /*The typwriter cursor */
         white-space: nowrap; /* Keeps the content on a single line */
@@ -275,12 +275,13 @@ header {
         from,to { border-color:transparent }
       }
 
-    /*.intro__img {
+    .intro__img {
+        width: 220px;
+        height: 300px;
         grid-area: img;
-        min-width: 250px;
-        position: relative;
+        position: absolute;
         z-index: 2;
-    }*/
+    }
 
     .section__subtitle--intro {
         /*align-self: start;
@@ -525,3 +526,58 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Resources Links info */
+
+.collapsible {
+    background-color: var(--clr-accent);
+    color: var(--clr-light);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: var(--clr-accent);
+  }
+
+  .collapsible:after {
+    content: '\002B';
+    color: var(--clr-light);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: var(--clr-light);
+  }
+
+  .rsrcLinks {
+    list-style-type: none;
+    border: 1px solid var(--clr-alt);
+    border-left: 5px solid var(--clr-accent);
+    background-color: var(--clr-light);
+    padding: 10px 20px;
+  }
+  
+  .rsrcLinks li {
+    padding: 8px 16px;
+    border-bottom: 1px solid var(--clr-alt);
+  }
+  
+  .rsrcLinks li:last-child {
+    border-bottom: none
+  }

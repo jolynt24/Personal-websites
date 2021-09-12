@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lan="en">
-
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,60 +11,66 @@
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Lora:wght@400;700&family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
   </head>
-
   <body>
     <header>
+      
       <div class="logo">
         <p><a href="index.html">Jolyn_Tellis</a></p>
       </div>
+
       <button class="nav-toggle" aria-label="toggle navigation">
         <span class="hamburger"></span>
       </button>
+      
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+          <li class="nav__item"><a href="index.html" class="nav__link">About Me</a></li>
           <li class="nav__item"><a href="index.html#skills" class="nav__link">Skills</a></li>
           <li class="nav__item"><a href="index.html#work" class="nav__link">Projects</a></li>
           <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
+          <li class="nav__item"><a href="resources.html" class="nav__link">Resources</a></li>
+          <li class="nav__item"><a href="blog.html" class="nav__link">Blog</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="intro" id="home">
-        <h1 class="section__title section__title--intro">
-          The title <strong>of my project</strong>
-        </h1>
-        <p class="section__subtitle section__subtitle--intro">Python Developer</p>
-        <img src="img/pitem1.jpg" alt="" class="intro__img">
+        <h1 class="section__title section__title--intro">Resources</h1>
+        <p class="section__subtitle section__subtitle--intro"></p>
     </section>
 
     <div class="portfolio-item-individual">
-        <p></p>
-        <img src="img/pdetails.jpg" alt="">
-        <p>fxj hgg iy</p>
-        <p>vhvhb huhuo</p>
+        <p>These are some of the links that are quite helpful for development.</p>
+        <button class="collapsible">Python Guide</button>
+        <div class="content">
+          <ul class="rsrcLinks">
+            <li><a href="https://www.freecodecamp.org/learn/scientific-computing-with-python/">Freecodecamp.org</a></li>
+            <li><a href="">Data Quest</a></li>
+          </ul>
+        </div>
     </div>
 
-    <footer id="contact">
-        <a href="mailto:jolyntellis@gmail.com" class="footer__link">jolyntellis@gmail.com</a>
-        <ul class="social-list">
-          <li class="social-list__item">
-            <a class="social-list__link" href="https://github.com/jolynt24">
-              <i class="fab fa-github"></i>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link" href="https://linkedin.com/in/jolynt24">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link" href="https://twitter.com/jolynt24">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-        </ul>
-      </footer>
+    <!--footer-->
+    <footer class="footer" id="contact">
+      <a href="mailto:jolyntellis@gmail.com" class="footer__link">jolyntellis@gmail.com</a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/jolyn-tellis">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://linkedin.com/in/jolynt24">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://twitter.com/jolynt24">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
   
       <script src="js/index.js"></script>
   
