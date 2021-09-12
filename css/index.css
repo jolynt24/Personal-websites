@@ -379,9 +379,18 @@ header {
     }*/
 
     .about-me__img {
+        width: 280px;
+        height: 300px;
         grid-area: img;
         position: relative;
         z-index: 2;
+    }
+}
+
+@media(min-width: 400px) {
+    .about-me__img {
+        width: 200px;
+        height: 370px;
     }
 }
 
