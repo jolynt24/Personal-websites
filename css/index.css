@@ -404,6 +404,7 @@ header {
 }
 
 .portfolio {
+    overflow: scroll;
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(500px,max-content));
     width: 90%;
@@ -464,6 +465,18 @@ header {
     width: .8em;
     margin-left: .5em; 
 }
+
+.tabs button {
+    background-color: var(--clr-dark);
+    border: 2px solid var(--clr-accent);
+    color: var(--clr-light);
+    padding: 10px 24px; 
+    cursor: pointer; 
+    float: left;
+    width:50%;
+}
+
+.tabs button:hover {background-color: var(--clr-alt);}
 
 @media (min-width: 400px) {
 
