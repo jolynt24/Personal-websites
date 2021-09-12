@@ -466,7 +466,7 @@ header {
     margin-left: .5em; 
 }
 
-.tabs button {
+.tabs .tab-btn {
     background-color: var(--clr-dark);
     border: 2px solid var(--clr-accent);
     color: var(--clr-light);
@@ -475,8 +475,8 @@ header {
     float: left;
     width:50%;
 }
-
-.tabs button:hover {background-color: var(--clr-alt);}
+    
+.tabs .tab-btn:hover, .active {background-color: var(--clr-alt);}
 
 @media (min-width: 400px) {
 

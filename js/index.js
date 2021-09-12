@@ -29,6 +29,15 @@ for (i = 0; i < coll.length; i++) {
 
 function openTab(tabName) {
   var i;
+  var tabs = document.getElementsByClassName("tabs");
+  var buttons = document.getElementsByClassName("tab-btn");
+  for(i=0;i<buttons.length;i++) {
+    buttons[i].addEventListener("click",function(){
+      var highlight = document.getElementsByClassName("active");
+      if(highlight.length>0){highlight[0].className = highlight[0].className.replace(" active","");}
+      this.className+=" active";
+    });
+  }
   var x = document.getElementsByClassName("tab");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
