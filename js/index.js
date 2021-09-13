@@ -26,21 +26,18 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+var tab = document.getElementsByClassName("tab");
+  tab[0].style.display = "block";
 
-function openTab(tabName) {
+function openTab(e,tabName) {
   var i;
-  var tabs = document.getElementsByClassName("tabs");
-  var buttons = document.getElementsByClassName("tab-btn");
-  for(i=0;i<buttons.length;i++) {
-    buttons[i].addEventListener("click",function(){
-      var highlight = document.getElementsByClassName("active");
-      if(highlight.length>0){highlight[0].className = highlight[0].className.replace(" active","");}
-      this.className+=" active";
-    });
+  for(i=0;i<tab.length;i++) {
+    tab[i].style.display = "none";
   }
-  var x = document.getElementsByClassName("tab");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+  var btn = document.getElementsByClassName("tab-btn");
+  for(i=0;i<btn.length;i++) {
+    btn[i].className = btn[i].className.replace(" active","");
   }
-  document.getElementById(tabName).style.display = "block";  
+  document.getElementById(tabName).style.display = "block";
+  e.currentTarget.className +=" active";
 }

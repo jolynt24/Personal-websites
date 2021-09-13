@@ -406,31 +406,32 @@ header {
 .portfolio {
     overflow: scroll;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(500px,max-content));
+    grid-template-columns: auto auto ;
     width: 90%;
     margin: 0 auto;
+    height: auto;
     /*max-width: 75em; */
+}
+
+.portfolio-item {
+    
 }
 
 .portfolio-item .portfolio__img {
     display: block;
-    width: 100%; 
-    left:0;
+    width: 50%; 
+    margin: 4px;
+    left:2em;
+    float: left;
 }
 
-.portfolio-item figcaption {
-    position: absolute;
-    top: 100%;
-    bottom: 0;
-    right: 0;
-    left: 0;
+.portfolio-item h3 {
+    position: relative;
     padding: 1em;
-    background: var(--clr-alt);
     color: var(--clr-light);
     text-align: left;
-    display: flex;
-    flex-direction: column;
-    transition: top ease-in-out 250ms; 
+    left: 1em;
+    top: 1.5em;
 }
 
 .portfolio-title {
@@ -440,29 +441,19 @@ header {
     font-family: var(--ff-primary);
 }
 
-.portfolio-item:hover figcaption, .portfolio-item:focus figcaption {top: 0;}
-
-.portfolio-desc {
-    color: var(--clr-light);
-    font-family: var(--ff-secondary);
-}
-
 .portfolio-link {
     color: var(--clr-light);
     font-weight: var(--fw-bold);
-    font-size: var(--fs-body);
+    font-size: var(--fs-h3);
     text-decoration: none;
     border-bottom: 3px solid var(--clr-light);
-    -webkit-align-self: flex-start;
-    -ms-flex-item-align: start;
-    align-self: flex-start; 
     font-family: var(--ff-header);
 }
 .portfolio-link::after {
     /*content: url(../img/arrow-white.svg);*/
     display: inline-block;
-    height: .8em;
-    width: .8em;
+    height: 1em;
+    width: 1em;
     margin-left: .5em; 
 }
 
@@ -474,18 +465,21 @@ header {
     cursor: pointer; 
     float: left;
     width:50%;
+    margin-bottom: 10px;
+}
+
+.tab {
+    display: none;
 }
     
 .tabs .tab-btn:hover, .active {background-color: var(--clr-alt);}
 
 @media (min-width: 400px) {
-
     .portfolio-item {
         position: relative;
         overflow: hidden;
         flex: 1 1 20rem;
     }
-
 }
 
 /*footer*/
