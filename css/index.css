@@ -232,6 +232,12 @@ header {
 .hamburger::before{top: 6px;}
 .hamburger::after{bottom: 6px;}
 
+@media(max-width: 800px) {
+    .nav-open .nav {
+        transform: translateX(65%);
+    }
+}
+
 /*Intro*/
 
 .intro {position: relative}
@@ -253,17 +259,17 @@ header {
         animation: 
           typing 4s steps(80,end),
           blink-line 0.5s step-end infinite;
-      }
+    }
 
-      @keyframes typing {
+    @keyframes typing {
         from { width: 0 }
         to { width: 4.7em; }
-      }
+    }
       
-      @keyframes blink-line {
+    @keyframes blink-line {
         50% { border-color: var(--clr-accent) }
         from,to { border-color:transparent }
-      }
+    }
 
     .intro__img {
         width: 220px;
@@ -474,7 +480,11 @@ header {
     
 .tabs .tab-btn:hover, .active {background-color: var(--clr-alt);}
 
-@media (min-width: 400px) {
+@media (max-width: 800px) {
+    .portfolio {
+        display: block;
+        font-size: var(--fs-body);
+    }
     .portfolio-item {
         position: relative;
         overflow: hidden;
@@ -486,7 +496,7 @@ header {
 
 .footer {
     background: var(--clr-dark);
-    color: var(--clr-alt);
+    color: var(--clr-light);
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
@@ -497,33 +507,70 @@ header {
     text-decoration: none;
 }
 
-.footer__link {
+/*.footer__link {
     font-weight: var(--fw-bold);
+}*/
+
+.social-list__link:hover {
+    font-size: 1em;
 }
 
-.footer__link:hover, .social-list__link:hover {
-    opacity: .7;
-    font-size: 2em;
-}
-
-.footer__link:hover {
+/*.footer__link:hover {
+    font-size: 1em;
     text-decoration: underline;
-}
+}*/
 
 .social-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 2em 0 0;
-    padding: 0;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
-.social-list__item {
+/*.social-list__item {
     margin: 0 .5em;
-}
+}*/
 
 .social-list__link {
-    padding: .5em;
+    display: block;
+    text-align: center;
+    padding: 1em;
+    transition: all 0.3s ease-out;
+    color: var(--clr-light);
+    border: 0.5px solid var(--clr-light);
+}
+
+.social-list__link:hover{
+    background-color: var(--clr-accent);
+}
+
+.gh{
+    background-color: var(--clr-dark);
+}
+
+.li {
+    background-color: #007bb5;
+}
+
+.tr {
+    background-color: #55ACEE;
+}
+
+.mail{
+    background: red;
+}
+
+.downloads label {
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-body);
+}
+
+@media (min-width: 400px) {
+    .social-list__link {
+        padding: 0.5em;
+    }
 }
 
 /* Portfolio item */
