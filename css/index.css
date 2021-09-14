@@ -414,7 +414,7 @@ header {
 }
 
 .portfolio-item {
-    
+    min-height: 100px;
 }
 
 .portfolio-item .portfolio__img {
