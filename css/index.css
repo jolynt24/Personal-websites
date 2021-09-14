@@ -410,6 +410,7 @@ header {
 }
 
 .portfolio {
+    overflow: hidden;
     display: grid;
     grid-template-columns: auto auto ;
     width: 90%;
