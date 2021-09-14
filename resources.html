@@ -24,12 +24,12 @@
       
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item"><a href="index.html" class="nav__link">About Me</a></li>
-          <li class="nav__item"><a href="index.html#skills" class="nav__link">Skills</a></li>
-          <li class="nav__item"><a href="index.html#work" class="nav__link">Projects</a></li>
-          <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
           <li class="nav__item"><a href="resources.html" class="nav__link">Resources</a></li>
           <li class="nav__item"><a href="blog.html" class="nav__link">Blog</a></li>
+          <li class="nav__item"><a href="#cv" class="nav__link">Download CV</a></li>
         </ul>
       </nav>
     </header>
@@ -40,39 +40,52 @@
     </section>
 
     <div class="portfolio-item-individual">
-        <p>These are some of the links that are quite helpful for development.</p>
+        <p>Some helpful links</p>
         <button class="collapsible">Python Guide</button>
         <div class="content">
           <ul class="rsrcLinks">
-            <li><a href="https://www.freecodecamp.org/learn/scientific-computing-with-python/">Freecodecamp.org</a></li>
-            <li><a href="">Data Quest</a></li>
+            <li><a href="https://www.freecodecamp.org/learn/scientific-computing-with-python/">Freecodecamp Python Course</a></li>
+          </ul>
+        </div>
+
+        <button class="collapsible">Web Development</button>
+        <div class="content">
+          <ul class="rsrcLinks">
+            <li><a href="https://www.freecodecamp.org/news/how-to-build-a-portfolio-website-and-deploy-to-digital-ocean/">Build your portfolio website from scratch</a></li>
+            
+            <li>
+              <button class="collapsible">HTML Guide</button>
+              <div class="content">
+                <ul class="rsrcLinks">
+                  <li><a href="https://www.freecodecamp.org/news/html-crash-course/?utm_source=pocket_mylist">HTML Basics</a></li>
+                </ul>
+              </div>
+            </li>
+
           </ul>
         </div>
     </div>
 
     <!--footer-->
-    <footer class="footer" id="contact">
-      <a href="mailto:jolyntellis@gmail.com" class="footer__link">jolyntellis@gmail.com</a>
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a class="social-list__link" href="https://github.com/jolyn-tellis">
-            <i class="fab fa-github"></i>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="https://linkedin.com/in/jolynt24">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="https://twitter.com/jolynt24">
-            <i class="fab fa-twitter"></i>
-          </a>
-        </li>
-      </ul>
+    <footer class="footer" id="cv">
+
+      <div class="social-list">
+        <a class="social-list__link gh" href="https://github.com/jolyn-tellis"><i class="fab fa-github"></i></a>
+        <a class="social-list__link li" href="https://linkedin.com/in/jolynt24"><i class="fab fa-linkedin"></i></a>
+        <a class="social-list__link tr" href="https://twitter.com/jolynt24"><i class="fab fa-twitter"></i></a>
+        <a class="social-list__link mail" href="mailto:jolyntellis4@gmail.com"><i class="fas fa-envelope-open"></i></a>
+      </div>
+
+      <div class="downloads">
+        <a href="file/jolyntellis_cv.pdf" download>
+          <i class="fas fa-file-download"></i><br>
+          <label>Download</label>
+        </a>
+      </div>
+
     </footer>
   
-      <script src="js/index.js"></script>
+    <script src="js/index.js"></script>
   
     </body>
   </html>
