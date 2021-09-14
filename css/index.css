@@ -413,7 +413,7 @@ header {
     overflow: hidden;
     display: grid;
     grid-template-columns: auto auto ;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     height: auto;
     /*max-width: 75em; */
