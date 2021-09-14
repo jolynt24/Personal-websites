@@ -333,6 +333,11 @@ header {
     margin: 0 auto;
 }
 
+.icons {
+    color: var(--clr-alt);
+    font-size: 2em;
+}
+
 @media(min-width: 800px) {
     .skills{
         display: flex;
